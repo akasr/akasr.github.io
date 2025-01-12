@@ -1,0 +1,129 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: rgba(0, 0, 0);
+    color: white;
+    font-family: monospace;
+}
+h1, h2, h3, .subheader {
+    font-family: serif;
+}
+section {
+    width: 50%;
+    margin: 0 auto;
+}
+
+#welcome-section {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 4rem;
+}
+/* Navigation */
+#navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    align-items: start;
+    background-color: black;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 2rem;
+    padding: 2rem;
+}
+a {
+    color: white;
+    text-decoration: none;
+}
+
+h1, .subheader {
+    font-size: 4rem;
+}
+h1 {
+    margin-top: 5rem;
+}
+
+/* About */
+.about p {
+    letter-spacing: 2px;
+    line-height: 1.5;
+    width: 80%;
+    margin-top: 1rem;
+}
+
+/* Socials */
+.socials {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    padding: 1rem 0;
+    margin-top: 2rem;
+}
+.social {
+    font-size: 1rem;
+    background-color: rgba(161, 156, 156, 0.164);
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+/* Skills */
+.skills {
+    margin-top: 1rem;
+}
+h2 {
+    padding: 0.5rem 0 1rem 0;
+    border-bottom: 2px solid rgba(204, 195, 195, 0.164);
+}
+.skills .content {
+    padding: 1.5rem;
+    background-color: rgba(161, 156, 156, 0.164);
+}
+
+/* Projects Section */
+#projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-bottom: 5rem;
+    gap: 1rem;
+}
+#projects h2 {
+    flex-basis: 100%;
+    margin-bottom: 1.5rem;
+}
+.project-tile {
+    width: 45%;
+    background-color: rgba(161, 156, 156, 0.164);
+    padding: 1rem;
+    border-radius: 10px;
+}
+.project-tile p {
+    margin: 10px 0;
+}
+
+/* footer */
+footer p {
+    text-align: center;
+    padding: 1rem;
+}
+
+@media only screen and (max-width: 1024px){
+    section {
+        width: 90%;
+    }
+}
+@media only screen and (max-width: 460px) {
+    .project-tile {
+        flex-basis: 100%;
+    }
+}
