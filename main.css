@@ -1,0 +1,77 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+    background-color: black;
+    color: white;
+    font-family: "Markazi Text", serif;;
+    padding: 1rem;
+    line-height: 1.5;
+    letter-spacing: 2px;
+    font-size: 18px;
+}
+
+header, section, footer {
+    margin: 1rem auto;
+    background-color: #0e0e0e;
+    padding: 1rem;
+}
+a {
+    text-decoration: none;
+}
+a, .red{
+    color: red;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header div#logo {
+    font-family: "Jacquard 24", serif;
+    font-size: 1.5rem;
+}
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 1rem;
+}
+
+/* Socials */
+section#socials {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 1rem;
+}
+section#socials h2 {
+    width: 100%;
+}
+section#socials div {
+    background-color: black;
+    padding: 8px;
+    border-radius: 2px;
+}
+section#socials div span {
+    color: white;
+}
+section#socials div i {
+    vertical-align: middle;
+}
+
+/*Projects*/
+.project {
+    padding: 1rem;
+    background-color: black;
+    margin: 1rem 0;
+}
+
+/*Copyright Text*/
+footer {
+    text-align: center;
+}
