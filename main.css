@@ -49,7 +49,7 @@ section#socials {
     justify-content: space-between;
     row-gap: 1rem;
 }
-section#socials h2 {
+h2 {
     width: 100%;
 }
 section#socials div {
@@ -70,8 +70,50 @@ section#socials div i {
     background-color: black;
     margin: 1rem 0;
 }
+.project p {
+    margin-bottom: 7px;
+}
 
 /*Copyright Text*/
 footer {
     text-align: center;
+}
+
+/* Media Queries */
+@media screen and (min-width: 768px) {
+    header, main, footer {
+        width: 70%;
+        margin: 1.5rem auto;
+    }
+    section#socials {
+        justify-content: start;
+        gap: 1rem;
+    }
+}
+@media screen and (min-width: 1024px) {
+    header, main, footer {
+        width: 45%;
+        margin: 1rem auto;
+        font-size: 1.2rem;
+    }
+    header, section, footer {
+        padding: 2rem;
+    }
+    header {
+        position: sticky;
+        top: 0;
+    }
+    section#socials div{
+        padding: 0.5rem;
+    }
+    section#projects {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .project {
+        padding: 1rem;
+        margin: 1rem 0;
+        width: calc(50% - 0.5rem);
+    }
 }
