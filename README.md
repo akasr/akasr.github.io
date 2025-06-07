@@ -1,4 +1,4 @@
-# Akash Raj
+## About Me
 
 🎓 Mechanical Engineering undergraduate at [National Institute of Technology, Patna](https://nitp.ac.in)  
 🚀 Aspiring Software Engineer focused on web development, algorithms, and open-source contributions
